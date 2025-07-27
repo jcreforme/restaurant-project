@@ -1,6 +1,6 @@
 # Restaurant Ordering System
 
-<img width="343" height="234" alt="image" src="https://github.com/user-attachments/assets/fca5f735-2e3f-4842-9a49-578b586a76dd" />
+<img width="343" height="234" alt="Python: A simple command-line interface (CLI) application for ordering food at a restaurant." src="https://github.com/user-attachments/assets/fca5f735-2e3f-4842-9a49-578b586a76dd" />
 
 A simple command-line interface (CLI) application for ordering food at a restaurant. This Python-based system allows users to view a menu, place an order, and calculate the total cost of their order.
 
