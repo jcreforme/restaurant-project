@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    environment:
+      DB_PASSWORD: root
+      DB_NAME: restaurant
+      PYTHONPATH: /app
+    depends_on:
+      - db
+    stdin_open: true
+    networks:
+      - app_network
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: restaurant
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge

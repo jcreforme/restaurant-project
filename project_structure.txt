@@ -1,0 +1,10 @@
+restaurant-ordering/
+├── app/
+│   ├── __init__.py
+│   ├── main.py          # Entry point for the CLI
+│   ├── menu.py          # Handles menu display and order logic
+│   ├── db.py            # Handles database connection and queries
+├── requirements.txt     # Python dependencies
+├── Dockerfile           # Dockerfile for the app
+├── docker-compose.yml   # Docker Compose file for app and MySQL
+├── init.sql             # SQL script to initialize the database

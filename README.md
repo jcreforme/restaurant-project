@@ -17,7 +17,7 @@ A simple command-line interface (CLI) application for ordering food at a restaur
 ## How to Run
 
 1. **Save the Script**:
-   - Save the Python script as `restaurant_ordering_system.py`.
+   - Save the Python script as `restaurant_ordering.py`.
 
 2. **Install Python**:
    - Ensure Python 3.x is installed on your system. You can download it from [python.org](https://www.python.org/).
@@ -78,9 +78,28 @@ The menu is defined in the script and can be customized. Example:
 
 ```python
 menu = {
-    "burger": 5.99,
-    "pizza": 8.99,
-    "salad": 4.99,
-    "soda": 1.99,
-    "fries": 2.99
+    "Tacos": 25,
+    "Burger": 45,
+    "Pizza": 60,
+    "Salad": 30,
+    "Soda": 15,
+    "Coffee": 20
 }
+```
+
+## Using Docker + MySQL + Python then
+
+
+docker-compose down
+
+Steps:
+docker-compose up --build
+
+docker run -it burger-project-python_app (will run outsithe the Network)
+Instead use:
+docker compose exec app bash
+or
+docker compose exec app python main.py   (# Run main.py inside the 'app' container)
+
+
+docker exec -it burger-project-python_db_1 mysql -h localhost -u root -p
